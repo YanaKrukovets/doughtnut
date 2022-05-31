@@ -1,0 +1,69 @@
+
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+.whole {
+    height: 100vh;
+}
+
+.alarm {
+    font-size: 2rem; 
+    color: cornflowerblue;
+}
+
+.dora {
+    width: 90%;
+}
+
+  .doughnut img {
+    width: 800px;
+    height: auto;
+    padding: 0;
+    margin: 0;
+  }
+
+  .pos1 {
+    position: absolute;
+    top: -20%;
+    left: -15%;
+  }
+
+  .pos2 {
+    position: absolute;
+    top: calc(100% - 300px);
+    right: -1%;
+  }
+  
+  .doughnut {
+    width: 750px;
+    height: 600px;
+    overflow: hidden;
+    border-radius: 100%;
+    z-index: -3;
+  }
+  
+  .doughnut > img {
+    margin-top: -200px;
+  }
+
+  @media screen and (max-width: 700px) {
+    .doughnut {
+        width: 430px;
+        height: 300px;
+    }
+
+    .doughnut img {
+        width: 500px;
+    }
+    .pos2 {
+        top: calc(100% - 100px);
+    }
+  }
+
+  @media screen and (max-width: 400px) {
+    .pos1 {
+        top: -5%;
+    }
+  }
